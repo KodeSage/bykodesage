@@ -35,12 +35,17 @@
     .navbar-default .navbar-collapse, 
     .navbar-default .navbar-form {
         border: none;
-        background-color: #000;
+          background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+     backdrop-filter: blur(10px);
     }
 
     .nav_scroll .navbar-collapse, 
     .nav_scroll .navbar-form {
-        background-color: #fff;
+     /* backdrop-filter: blur(50px); */
     }
 
     h1.cd-headline > span > b {
@@ -59,7 +64,9 @@
     }
 
     .navbar-default .navbar-nav a:after {
-        display: none;
+        /* display: none; */
+        width: 15%;
+        margin: 0px 20rem;
     }
 
     /*-- about --*/
