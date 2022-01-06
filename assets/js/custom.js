@@ -132,62 +132,62 @@ $(function () {
     /*--------------------------------
         06. Form Validation
     ----------------------------------*/
-    $('.contact form .submit').on('click', function () {
-        $('.contact form .form-control').removeClass("errorForm");
-        $('.msg_success,.msg_error').css("display","");
+    // $('.contact form .submit').on('click', function () {
+    //     $('.contact form .form-control').removeClass("errorForm");
+    //     $('.msg_success,.msg_error').css("display","");
         
-        var error = false,
-            name = $('.contact form input[type="text"]');
+    //     var error = false,
+    //         name = $('.contact form input[type="text"]');
         
-        if (name.val() === "" || name.val() === " ") {
-            error = true;
-            $(name).addClass("errorForm");
-        }
+    //     if (name.val() === "" || name.val() === " ") {
+    //         error = true;
+    //         $(name).addClass("errorForm");
+    //     }
         
-        var email_compare = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i,
-            email = $('.contact form input[type="email"]');
+    //     var email_compare = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i,
+    //         email = $('.contact form input[type="email"]');
         
-        if (email.val() === "" || email.val() === " ") {
-            $(email).addClass("errorForm");
-            error = true;
-        } else if (!email_compare.test(email.val())) {
-            $(email).addClass("errorForm");
-            error = true;
-        }
+    //     if (email.val() === "" || email.val() === " ") {
+    //         $(email).addClass("errorForm");
+    //         error = true;
+    //     } else if (!email_compare.test(email.val())) {
+    //         $(email).addClass("errorForm");
+    //         error = true;
+    //     }
         
-        var msg = $('.contact form textarea');
+    //     var msg = $('.contact form textarea');
         
-        if (msg.val() === "" || msg.val() === " ") {
-            error = true;
-            $(msg).addClass("errorForm");
+    //     if (msg.val() === "" || msg.val() === " ") {
+    //         error = true;
+    //         $(msg).addClass("errorForm");
             
-        }
+    //     }
     
-        if (error === true) {
-            return false;
-        }
+    //     if (error === true) {
+    //         return false;
+    //     }
         
-        var data_string = $('.contact form').serialize();
+    //     var data_string = $('.contact form').serialize();
         
     
-        $.ajax({
-            type: "POST",
-            url: $('.contact form').attr('action'),
-            data: data_string,
+    //     $.ajax({
+    //         type: "POST",
+    //         url: $('.contact form').attr('action'),
+    //         data: data_string,
             
-            success: function (message) {
-                if (message === 'SENDING') {
-                    $('.msg_success').fadeIn('slow');
-                } else {
-                    $('.msg_error').fadeIn('slow');
-                }
-            }
+    //         success: function (message) {
+    //             if (message === 'SENDING') {
+    //                 $('.msg_success').fadeIn('slow');
+    //             } else {
+    //                 $('.msg_error').fadeIn('slow');
+    //             }
+    //         }
             
-        });
+    //     });
         
-        return false;
+    //     return false;
         
-    });
+    // });
 
     /*--------------------------------
         07. Window Scroll
