@@ -1068,7 +1068,7 @@ input.form-control:last-of-type {
 }
 
 .msg_error {
-    color: #CE3D3D;
+    color: greenyellow;
 }
 
 .msg_success {
