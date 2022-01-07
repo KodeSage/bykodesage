@@ -273,7 +273,7 @@ h1, h2, h3, h4,
     left: 0;
     z-index: 10000;
     visibility: hidden;
-    background-color: blueviolet;
+    background-color: #000;
 }
 
 .pageload-overlay.show {
@@ -288,7 +288,7 @@ h1, h2, h3, h4,
 }
 
 .pageload-overlay svg path {
-    fill: blueviolet;
+    fill: #000;
 }
 
 /*End Preloader*/
