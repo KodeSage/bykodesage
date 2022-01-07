@@ -369,7 +369,7 @@ h1, h2, h3, h4,
 }
 
 .nav_scroll {
-    background-color: #000;
+    background-color: #fff;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
@@ -379,12 +379,12 @@ h1, h2, h3, h4,
 }
 
 .nav_scroll .navbar-brand {
-    color: #fff;
+    color: #000;
 }
 
 .nav_scroll .navbar-brand:hover, 
 .nav_scroll .navbar-brand:focus {
-    color: #fff;
+    color: #000;
 }
 
 .nav_scroll .navbar-nav > li > a,
@@ -393,11 +393,11 @@ h1, h2, h3, h4,
 .nav_scroll .navbar-nav > .active > a,
 .nav_scroll .navbar-nav > .active > a:hover,
 .nav_scroll .navbar-nav > .active > a:focus {
-    color: #fff;
+    color: #000;
 }
 
 .nav_scroll .navbar-nav a:after {
-    background: #fff;
+    background: #000;
 }
 
 .navbar-default .navbar-toggle:hover, 
@@ -413,7 +413,7 @@ h1, h2, h3, h4,
 }
 
 .nav_scroll .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #000;
 }
 
 .navbar-toggle .icon-bar:nth-of-type(2) {
