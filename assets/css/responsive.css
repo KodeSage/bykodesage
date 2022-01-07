@@ -64,9 +64,8 @@
     }
 
     .navbar-default .navbar-nav a:after {
-        /* display: none; */
-        width: 15%;
-        margin: 0px 20rem;
+        display: none;
+    
     }
 
     /*-- about --*/

@@ -160,7 +160,7 @@ section {
 
 .bg_image {
     background-size: cover;
-    background-position: cover;
+    background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -1019,7 +1019,7 @@ input.form-control:last-of-type {
     color: #fff;
     border: 2px solid transparent;
     line-height: 1;
-    background: #111;
+    background: blueviolet;
     font-weight: 400;
     font-size: 13px;
     text-transform: uppercase;
@@ -1037,7 +1037,7 @@ input.form-control:last-of-type {
 .contact form .btn:hover {
     color: #000;
     background-color: transparent;
-    border-color: #111;
+    border-color: blueviolet;
 }
 
 .btn:focus,
@@ -1112,9 +1112,8 @@ footer .social-links {
 footer .social-links a {
     display: inline-block;
     margin: 15px 4px;
-    font-size: 18px;
+    font-size: 20px;
     color: #fafafa;
-    background: #2B2B2B;
     width: 42px;
     height: 42px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1122,8 +1121,9 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-    color: #111;
+    color: blueviolet;
     background-color: #fff;
+    border-radius: 50px;
 }
 
 footer .social-links a i {
